@@ -11,7 +11,6 @@ ul {
   margin: 0 auto;
   max-width: 400px;
   list-style: none;
-  
 }
 
 ul li {
@@ -20,13 +19,13 @@ ul li {
   align-items: center;
   width: 250px;
   height: 3rem;
-  background-color: grey;
+  background-color: rgb(0, 0, 0);
   border-radius: 7px;
   margin-bottom: 5px;
   font-size: large;
 }
 li {
-  color: #000000;
+  color: #c0f826;
   text-decoration: none;
 }
 
@@ -36,34 +35,31 @@ li:hover {
 }
 .web1 {
   position: relative;
-
+  transition: 0.5s ease-in-out;
 }
 
 .web {
-position:absolute;
-top:10%;
-left:255px;
-  display :none;
-  transition: display 2s ease;
+  position: absolute;
+  top: 10%;
+  left: 255px;
+  /* display :none; */
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
-.web>li{
+.web > li {
   display: grid;
   text-align: center;
   align-items: center;
   width: 170px;
   height: 2rem;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(88, 81, 81);
   border-radius: 4px;
   margin-bottom: 4px;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
   font-size: medium;
 }
 
-.web1>li:hover + .web {
-  display:block;
-    transition: display 2s ease;
-
-
-
-  
+.web1 > li:hover + .web {
+  /* display:block; */
+  opacity: 1;
 }
